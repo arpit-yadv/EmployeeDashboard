@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/EmployeeDashboard/static/css/main.eeb9ee82.css",
-    "main.js": "/EmployeeDashboard/static/js/main.84fa5f07.js",
+    "main.js": "/EmployeeDashboard/static/js/main.25fbbd8e.js",
     "static/js/787.5271e817.chunk.js": "/EmployeeDashboard/static/js/787.5271e817.chunk.js",
     "static/media/ds_salaries.csv": "/EmployeeDashboard/static/media/ds_salaries.1f85d4164204887554c2.csv",
     "static/media/countryToCoordinateMap.csv": "/EmployeeDashboard/static/media/countryToCoordinateMap.f3002ca7d74838680d94.csv",
     "index.html": "/EmployeeDashboard/index.html",
     "main.eeb9ee82.css.map": "/EmployeeDashboard/static/css/main.eeb9ee82.css.map",
-    "main.84fa5f07.js.map": "/EmployeeDashboard/static/js/main.84fa5f07.js.map",
+    "main.25fbbd8e.js.map": "/EmployeeDashboard/static/js/main.25fbbd8e.js.map",
     "787.5271e817.chunk.js.map": "/EmployeeDashboard/static/js/787.5271e817.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eeb9ee82.css",
-    "static/js/main.84fa5f07.js"
+    "static/js/main.25fbbd8e.js"
   ]
 }
