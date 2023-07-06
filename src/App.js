@@ -29,10 +29,10 @@ function App() {
       <div style={{width: "80%", hieght: "100vh"}}>
         <HashRouter>
           <Routes >
-            <Route path="EmployeeDashboard/#/" element={ <DashboardScreen/> } />
-            <Route path="EmployeeDashboard/#/salaryinsights" element={ <HomePage data = {data} />  } />
-            <Route path="EmployeeDashboard/#/locationinsights" element={ <EmployeeLocationGraphs data = {data} />  } />
-            <Route path="EmployeeDashboard/#/search" element={ <SearchPage data = {data}/>} />
+            <Route path="/" element={ <DashboardScreen/> } />
+            <Route path="salaryinsights" element={ <HomePage data = {data} />  } />
+            <Route path="locationinsights" element={ <EmployeeLocationGraphs data = {data} />  } />
+            <Route path="search" element={ <SearchPage data = {data}/>} />
           </Routes>
         </HashRouter>
       </div>

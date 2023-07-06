@@ -60,7 +60,7 @@ export  const Constants = {
         {
           cardTitle: "Salary Insights",
           cardText: "Salary Trends over different parameters like Work Years, Country, Company Location etc.",
-          cardLink: "/salaryinsights",
+          cardLink: "/EmployeeDashboard/#/salaryinsights",
           // imageLink: "https://jupiter.money/blog/wp-content/uploads/2022/08/128.-Salary-Account.jpg",
           // imageLink: "https://www.searchenginejournal.com/wp-content/uploads/2021/07/seo-salary-report-60e4618f40216-sej.png",
           imageLink: "https://asksonnie.info/wp-content/uploads/2016/04/Salaries.jpg",
@@ -68,13 +68,13 @@ export  const Constants = {
         {
           cardTitle: "Employee Locations",
           cardText: "location trends over different parameters like Employee Country, Company Location etc.",
-          cardLink: "/locationinsights",
+          cardLink: "/EmployeeDashboard/#/locationinsights",
           imageLink: "https://www.androidauthority.com/wp-content/uploads/2015/07/location_marker_gps_shutterstock-1200x808.jpg.webp",
         }, 
         {
           cardTitle: "Search",
           cardText: "Search over all the different parameters of the dataset like Employee Country, Work Year, Job Title etc.",
-          cardLink: "/search",
+          cardLink: "/EmployeeDashboard/#/search",
           // imageLink: "https://www.steptwo.com.au/wp-content/uploads/kmc_fixingsearch-W.jpg",
           // imageLink: "https://www.steptwo.com.au/wp-content/uploads/kmc_fixingsearch-W.jpg",
           imageLink: "https://nordvpn.com/wp-content/uploads/blog-social-best-private-search-engines-1200x628-1.png",

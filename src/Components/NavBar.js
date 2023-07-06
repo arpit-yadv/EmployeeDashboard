@@ -2,8 +2,8 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-secondary p-2 border rounded">
-      <a className="navbar-brand" href="/">
+    <nav className="navbar navbar-expand-lg navbar-light bg-secondary p-2 border rounded font-weight-bold">
+      <a className="navbar-brand" href="/EmployeeDashboard/#/">
         Segwise.ai
       </a>
       <button
@@ -21,22 +21,22 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link" href="/">
+            <a className="nav-link" href="/EmployeeDashboard/#/">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/salaryinsights">
+            <a className="nav-link" href="/EmployeeDashboard/#/salaryinsights">
               Salary Insights
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/locationinsights">
+            <a className="nav-link" href="/EmployeeDashboard/#/locationinsights">
               Employee on Maps
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/search">
+            <a className="nav-link" href="/EmployeeDashboard/#/search">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 </svg> Search
