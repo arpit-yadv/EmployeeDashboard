@@ -63,7 +63,8 @@ export  const Constants = {
           cardLink: "/EmployeeDashboard/#/salaryinsights",
           // imageLink: "https://jupiter.money/blog/wp-content/uploads/2022/08/128.-Salary-Account.jpg",
           // imageLink: "https://www.searchenginejournal.com/wp-content/uploads/2021/07/seo-salary-report-60e4618f40216-sej.png",
-          imageLink: "https://asksonnie.info/wp-content/uploads/2016/04/Salaries.jpg",
+          // imageLink: "https://asksonnie.info/wp-content/uploads/2016/04/Salaries.jpg",
+          imageLink: "https://matchr.com/wp-content/uploads/2021/07/Depositphotos_55140233_s-2019.jpg",
         },
         {
           cardTitle: "Employee Locations",
