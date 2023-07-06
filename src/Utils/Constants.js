@@ -1,0 +1,83 @@
+export  const Constants = {
+    ELEMENTS: "elements",
+    FIELDS: "fields",
+    BACKGROUND_COLORS: [
+        'rgba(255, 99, 132, 0.2)',
+        // 'rgba(255, 159, 64, 0.2)',
+        // 'rgba(255, 205, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        // 'rgba(54, 162, 235, 0.2)',
+        // 'rgba(153, 102, 255, 0.2)',
+        // 'rgba(201, 203, 207, 0.2)'
+      ],
+    BORDER_COLORS : [
+        'rgb(255, 99, 132)',
+        // 'rgb(255, 159, 64)',
+        // 'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        // 'rgb(54, 162, 235)',
+        // 'rgb(153, 102, 255)',
+        // 'rgb(201, 203, 207)'
+      ],
+      DROPDOWN_FIELDS: {
+        employee_residence: "Country",
+        salary_in_usd: "Salary in USD",
+        job_title: "Job Title",
+        employment_type: "Employement Type",
+        salary: "Salary",
+        salary_currency: "Salary Currency",
+        work_year: "Work Year",
+        experience_level: "Experience Level",
+        company_location: "Company Location",
+        company_size: "Company Size",
+        remote_ratio : "Remote Ratio",        
+      },
+      AVERAGE_SALARY_GRAPHS: {
+        employee_residence: "Employee Country",
+        job_title: "Job Title",
+        employment_type: "Employement Type",
+        work_year: "Work Year",
+        experience_level: "Experience Level",
+        company_location: "Company Location",
+        company_size: "Company Size",
+        remote_ratio : "Remote Ratio",   
+      },
+      EMPLOYEE_LOCATION_GRAPHS: {
+        employee_residence: "Employee Country",
+        company_location: "Company Location",
+      },
+      EMPLOYEE_LOCATION_FILTERS: {
+        employee_residence: "Employee Country",
+        job_title: "Job Title",
+        employment_type: "Employement Type",
+        work_year: "Work Year",
+        experience_level: "Experience Level",
+        company_location: "Company Location",
+        company_size: "Company Size",
+        remote_ratio : "Remote Ratio",   
+      },
+      CARD_DETAILS: [
+        {
+          cardTitle: "Salary Insights",
+          cardText: "Salary Trends over different parameters like Work Years, Country, Company Location etc.",
+          cardLink: "/salaryinsights",
+          // imageLink: "https://jupiter.money/blog/wp-content/uploads/2022/08/128.-Salary-Account.jpg",
+          // imageLink: "https://www.searchenginejournal.com/wp-content/uploads/2021/07/seo-salary-report-60e4618f40216-sej.png",
+          imageLink: "https://asksonnie.info/wp-content/uploads/2016/04/Salaries.jpg",
+        },
+        {
+          cardTitle: "Employee Locations",
+          cardText: "location trends over different parameters like Employee Country, Company Location etc.",
+          cardLink: "/locationinsights",
+          imageLink: "https://www.androidauthority.com/wp-content/uploads/2015/07/location_marker_gps_shutterstock-1200x808.jpg.webp",
+        }, 
+        {
+          cardTitle: "Search",
+          cardText: "Search over all the different parameters of the dataset like Employee Country, Work Year, Job Title etc.",
+          cardLink: "/search",
+          // imageLink: "https://www.steptwo.com.au/wp-content/uploads/kmc_fixingsearch-W.jpg",
+          // imageLink: "https://www.steptwo.com.au/wp-content/uploads/kmc_fixingsearch-W.jpg",
+          imageLink: "https://nordvpn.com/wp-content/uploads/blog-social-best-private-search-engines-1200x628-1.png",
+        }
+      ],
+};

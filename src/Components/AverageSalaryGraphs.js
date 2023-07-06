@@ -1,70 +1,24 @@
-import React from "react";
-import LineChart from "./LineChart";
+import React from 'react'
+import { Constants } from '../Utils/Constants';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AvgSalaryGraphByField from './AvgSalaryGraphByField';
 
-const AverageSalary = ({data, sortField})=>{
 
+export default function AverageSalaryGraphs({data}) {
 
-
-    const avgSalaryChartData = data.reduce((acc, item) => {
-        const field = item[sortField];
-        const salary = item.salary_in_usd;
-        if (!acc[field]) {
-          acc[field] = { sortField: field, count: 0, avg_salary: 0 };
-        }
-        acc[field].count++;
-        acc[field].avg_salary= acc[field].avg_salary + (salary - acc[field].avg_salary)/acc[field].count;
-        // acc[field].avg_salary = acc[field].total_salary/acc[field].count;
-        // console.log("count is ", acc[field].count);
-    
-        return acc;
-      }, {});
-    const fields = [];
-    const avg_salary = [];
-    console.log("Type of is - ",typeof(avgSalaryChartData));
-    console.log("Average List is - ",avgSalaryChartData);
-    for(let element in avgSalaryChartData){
-      console.log("element is ",element, avgSalaryChartData[element]["avg_salary"]);
-      fields.push(element);
-      avg_salary.push(avgSalaryChartData[element]["avg_salary"]);
-    };
-    console.log(fields);
-    console.log(avg_salary);
-    // avgSalaryChartData.forEach(element => {
-    //     fields.push(element[sortField]);
-    //     avg_salary.push(element[total_salary]/element[count]);
-    // });
-
-    const chartData = {
-        labels: fields,
-        datasets: [
-            {
-              label: 'Average Salary',
-              data: avg_salary,
-              fill: false,
-              borderColor: 'rgb(75, 192, 192)',
-              tension: 0.1,
-            },
-          ],
+    function generateKey() {
+      return Math.random().toString(36).substr(2, 9);
     }
-    const chartOptions = {
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
-    };
 
-    return(
-      <div>
-        <LineChart chartData={chartData} chartOptions={chartOptions}/>
-      </div>
-    )
 
+  return (
+    <div  >
+        <h1 className='m-4 text-white'>AverageSalary Graphs </h1>
+        {data && Object.entries(Constants.AVERAGE_SALARY_GRAPHS).map(([key,value])=>{
+              return <AvgSalaryGraphByField key = {generateKey()} data = {data} sortByField = {key} sortText = {value}/>
+            })}
+
+
+    </div>
+  )
 }
-
-export default AverageSalary;
-
-
-
-
-  
