@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-secondary p-2 border rounded font-weight-bold" style={{fontSize: 18, fontWeight: 500}}>
+    <nav className="navbar navbar-expand-lg navbar-light bg-secondary p-2 border rounded" style={{fontSize: 18, fontWeight: 500}}>
       <a className="navbar-brand" href="/EmployeeDashboard/#/">
         <span style={{fontSize: 20}}>Segwise.ai</span>
       </a>
@@ -21,12 +21,12 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item active">
-            <a className="nav-link font-weight-bold"  href="/EmployeeDashboard/#/">
+            <a className="nav-link"  href="/EmployeeDashboard/#/">
               Home
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link font-weight-bold"  href="/EmployeeDashboard/#/salaryinsights">
+            <a className="nav-link"  href="/EmployeeDashboard/#/salaryinsights">
               Salary Insights
             </a>
           </li>
