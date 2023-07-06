@@ -5,7 +5,7 @@ import { parse } from 'papaparse';
 
 
         
-const fetchData1 = async ({csvData}) => {
+const fetchData = async ({csvData}) => {
     try {
     const response = await fetch(csvData);
     const csvText = await response.text();
@@ -19,6 +19,6 @@ const fetchData1 = async ({csvData}) => {
     console.error('Error fetching CSV data:', error);
     }
 };
-export default fetchData1;
+export default fetchData;
     
     

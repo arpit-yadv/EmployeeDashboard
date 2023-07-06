@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import ReactDOM from 'react-dom';
-import fetchData1 from './Utils/CsvParser';
+import fetchData from './Utils/CsvParser';
 import csvData from './data/ds_salaries.csv';
 import { Route, Routes, HashRouter } from 'react-router-dom';
 import HomePage from './Screens/HomePage';
@@ -16,7 +16,7 @@ function App() {
 
   useEffect(()=>{
     const fetchFunction = async ()=>{
-      const csvData1 = await fetchData1({csvData});
+      const csvData1 = await fetchData({csvData});
       const filteredData = csvData1.filter((value) => value !== undefined);
       setData(filteredData);
     }

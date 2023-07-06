@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import fetchData1 from '../Utils/CsvParser';
+import fetchData from '../Utils/CsvParser';
 import countryCsvData from './../data/countryToCoordinateMap.csv'
 import TotalDataByField from '../Utils/TotalDataParser';
 import SearchForm from './SearchForm';
@@ -44,7 +44,7 @@ function MapComponent({data1, sortByField, sortText}) {
 
     useEffect(()=>{
         const fetchMapData = async()=>{
-            const countryCoordinatesData = await fetchData1({csvData: countryCsvData});
+            const countryCoordinatesData = await fetchData({csvData: countryCsvData});
             const countryToEmployeeCount = await TotalDataByField({data: filteredData, sortByField})
             mapDataBuilder({mapData:countryToEmployeeCount, countryCoordinatesData});
         }

@@ -1,6 +1,6 @@
 import '../App.css';
 import { useEffect, useState } from 'react';
-import fetchData1 from '../Utils/CsvParser';
+import fetchData from '../Utils/CsvParser';
 import csvData from '../data/ds_salaries.csv';
 import AverageSalaryGraphs from '../Components/AverageSalaryGraphs';
 
@@ -10,7 +10,7 @@ function HomePage() {
 
   useEffect(()=>{
     const fetchFunction = async ()=>{
-      const csvData1 = await fetchData1({csvData});
+      const csvData1 = await fetchData({csvData});
       const filteredData = csvData1.filter((value) => value !== undefined);
       setData(filteredData);
     }
