@@ -10,7 +10,7 @@ export default function DashboardScreen() {
         <div className = "container">
           <div className='row justify-content-between'>
             {Constants.CARD_DETAILS.map((dataItem,index)=>
-            <div key = {dataItem.cardTitle} className= "col-lg-6 mb-4">
+            <div key = {dataItem.cardTitle}  className= "col-lg-6 mb-4 ">
                 <Card  imageLink={dataItem.imageLink} cardLink={dataItem.cardLink} cardText={dataItem.cardText}
                 cardTitle={dataItem.cardTitle}/>
             </div>

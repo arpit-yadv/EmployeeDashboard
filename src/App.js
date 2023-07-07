@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+
 import ReactDOM from 'react-dom';
 import fetchData from './Utils/CsvParser';
 import csvData from './data/ds_salaries.csv';
@@ -9,6 +10,7 @@ import SearchPage from './Screens/SearchPage';
 import './App.css'
 import DashboardScreen from './Screens/DashboardScreen';
 import EmployeeLocationGraphs from './Components/EmployeeLocationGraphs';
+import EmployeeInsightsPage from './Screens/EmployeeInsightsPage';
 
 function App() {
 
@@ -25,14 +27,16 @@ function App() {
   },[]);
   
   return (
-    <div className="App d-flex justify-content-center" >
-      <div style={{width: "80%", hieght: "100vh"}}>
+    <div className="App d-flex  justify-content-center" >
+      <div className='container-fluid'>
         <HashRouter>
           <Routes >
             <Route path="/" element={ <DashboardScreen/> } />
             <Route path="salaryinsights" element={ <HomePage data = {data} />  } />
             <Route path="locationinsights" element={ <EmployeeLocationGraphs data = {data} />  } />
-            <Route path="search" element={ <SearchPage data = {data}/>} />
+            <Route path="employeeinsights" element={ <EmployeeInsightsPage data = {data} />  } />
+            <Route path="search" element={ <SearchPage data = {data} isAI = {false}/>} />
+            <Route path="AIsearch" element={ <SearchPage data = {data} isAI = {true} />} />
           </Routes>
         </HashRouter>
       </div>

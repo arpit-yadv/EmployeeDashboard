@@ -21,7 +21,7 @@ const BarGraph = ({chartData}) => {
   };
   const handleZoomOut = () => {
     if (chartRef && chartRef.current) {
-      chartRef.current.zoom();
+      chartRef.current.zoom(0.9);
     }
   };
 

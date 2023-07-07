@@ -14,7 +14,7 @@ const SearchForm = ({ onSearch, fieldOptions }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    onSearch(field, value);
+    onSearch({field, value});
   };
 
 
@@ -52,3 +52,4 @@ const SearchForm = ({ onSearch, fieldOptions }) => {
 };
 
 export default SearchForm;
+
