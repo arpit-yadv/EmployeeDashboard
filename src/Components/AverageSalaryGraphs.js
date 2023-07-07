@@ -14,13 +14,12 @@ export default function AverageSalaryGraphs({data}) {
 
   return (
     <div  >
-        <h1 className='m-4 text-white'>AverageSalary Graphs </h1>
-        {data && Object.entries(Constants.AVERAGE_SALARY_GRAPHS).map(([key,value])=>{
-              return <AvgSalaryGraphByField key = {generateKey()} data = {data} sortByField = {key} sortText = {value}/>
-            })}
-        {data && Object.entries(Constants.EMPLOYEE_INSIGHTS_BY).map(([key,value])=>{
-              return <EmployeeCountGraphByField key = {generateKey()} data = {data} sortByField = {key} sortText = {value}/>
-            })}
+        <h1 className='m-4'>AverageSalary Graphs </h1>
+        <div>
+          {data && Object.entries(Constants.AVERAGE_SALARY_GRAPHS).map(([key,value])=>{
+                return <AvgSalaryGraphByField key = {generateKey()} data = {data} sortByField = {key} sortText = {value}/>
+              })}
+        </div >
 
 
     </div>

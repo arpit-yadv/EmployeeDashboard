@@ -4,7 +4,7 @@ import AverageSalaryByField from '../Utils/AvgDataParser';
 import LineChart from './LineChart';
 import { Constants } from '../Utils/Constants';
 import BarGraph from './BarGraph';
-import TotalDataByField from '../Utils/TotalDataParser';
+import TotalDataByField from '../Utils/TotalDataByFieldCalc';
 
 
 
@@ -35,7 +35,6 @@ const EmployeeCountGraphByField = ({data, sortByField, sortText}) => {
     useEffect(()=>{
         const fetchData = async ()=>{
           const countryToEmployeeCount = await TotalDataByField({data: finalData, sortByField})
-          console.log("Total Employee Count over ", sortByField , countryToEmployeeCount);
           const graphData2 = dataToChartData({avg_data: countryToEmployeeCount});
           setGraphData(graphData2);
 
@@ -64,9 +63,9 @@ const EmployeeCountGraphByField = ({data, sortByField, sortText}) => {
     };
 
   return (
-    <div className = "m-4 border border-dark border-secondary rounded " >
+    <div className = "m-auto mb-4 border border-dark border-secondary rounded col-lg-9" >
       
-      <h2>Employe Count over {sortText}</h2>
+      <h2 data-testid = "employee-count-heading">Employee Count over {sortText}</h2>
       <button className="btn btn-primary m-1" onClick={taggleGraphType}>Change Graph Type</button>
       {graphData && getGraph()}
       {graphData  &&

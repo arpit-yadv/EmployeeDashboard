@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './SearchForm.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const SearchForm = ({ onSearch, fieldOptions }) => {
+const SearchForm = ({ onSearch, fieldOptions, text }) => {
   const [field, setField] = useState('');
   const [value, setValue] = useState('');
 	const [selectedOption, setSelectedOption] = useState('');
@@ -21,10 +21,10 @@ const SearchForm = ({ onSearch, fieldOptions }) => {
   return (
 		<div className = "m-3">
 
-			<form className="container mt-4 d-flex justify-content-left" onSubmit={handleSubmit}>
+			<form data-testid = "filter-form" className="container mt-4 d-flex justify-content-left " onSubmit={handleSubmit}>
 							<div className="form-group m-2">
-								<label> Select a Field to Search:</label>
-									<select className ="form-control ph-4 "  id="dropdown" value={selectedOption} onChange={handleSelectChange}>
+								<label> Select a Field to {text ? text: "Filter"}</label>
+									<select data-testid = "dropdown-test" className ="form-control ph-4 "  id="dropdown" value={selectedOption} onChange={handleSelectChange}>
 											<option className = "defaultoption" value="">-- Select --</option>
 											{Object.entries(fieldOptions).map(([key, value]) => (
 												<option key={value} value={key}>{value}</option>
@@ -38,6 +38,7 @@ const SearchForm = ({ onSearch, fieldOptions }) => {
 								<input
 									className = "form-control"
 									type="text"
+									data-testid = "search-input"
 									value={value}
 									onChange={e => setValue(e.target.value)}
 								/>

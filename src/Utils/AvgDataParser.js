@@ -12,18 +12,14 @@ const AverageSalaryByField = ({data, sortField})=>{
     
         return acc;
       }, {});
-    const fields = [];
-    const avg_salary = [];
     let avg_data = {
         fields: [],
         elements:[],
     };
-    
+
     for(let element in avgSalaryChartData){
-        fields.push(element);
         avg_data["fields"].push(element);
         avg_data["elements"].push(avgSalaryChartData[element]["avg_salary"]);
-        avg_salary.push(avgSalaryChartData[element]["avg_salary"]);
     };
     return avg_data;
 

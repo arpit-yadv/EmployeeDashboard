@@ -59,7 +59,7 @@ const SearchPage = ({ data, isAI }) => {
           <h2>Search Page</h2>
         }
         {isAI ? <SearchWithAIForm onSearch = {handleSearch} /> :
-          <SearchForm onSearch={handleSearch}  fieldOptions = {Constants.DROPDOWN_FIELDS} />
+          <SearchForm onSearch={handleSearch}  fieldOptions = {Constants.DROPDOWN_FIELDS} text = {"Search"} />
         }
       {searchResults.length ?
           <SearchResults

@@ -59,7 +59,7 @@ Chart.register(zoomPlugin);
   };
 
   return (
-    <div>
+    <div data-testid = "line-chart">
       <h3>Line Graph</h3>
       <Line ref={chartRef} data={chartData} options={chartOptions} />
       <div>

@@ -13,7 +13,7 @@ export default function EmployeeInsightsPage({data}) {
 
   return (
     <div  >
-      <h2>Employee Insights</h2>
+      <h2 className='m-4'>Employee Insights</h2>
         {data && Object.entries(Constants.EMPLOYEE_INSIGHTS_BY).map(([key,value])=>{
               return <EmployeeCountGraphByField key = {generateKey()} data = {data} sortByField = {key} sortText = {value}/>
             })}

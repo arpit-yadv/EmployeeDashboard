@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import fetchData from './Utils/CsvParser';
 import csvData from './data/ds_salaries.csv';
 import { Route, Routes, HashRouter } from 'react-router-dom';
-import HomePage from './Screens/HomePage';
+import HomePage from './Screens/SalaryInsightsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchPage from './Screens/SearchPage';
 import './App.css'
@@ -41,9 +41,6 @@ function App() {
         </HashRouter>
       </div>
   </div>
-    // <div>
-    //   <HomePage/>
-    // </div>
   );
 }
 

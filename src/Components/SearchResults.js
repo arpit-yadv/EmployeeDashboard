@@ -20,7 +20,7 @@ const SearchResults = ({
 
 
   return (
-    <div className="search-results">
+    <div data-testid = "search-results" className="search-results">
     <h3>Results</h3>
       <SearchResultsTable results={results}/>
     <div className="pagination">

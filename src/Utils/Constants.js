@@ -1,4 +1,4 @@
-export  const Constants = {
+export const Constants = {
     ELEMENTS: "elements",
     FIELDS: "fields",
     BACKGROUND_COLORS: [

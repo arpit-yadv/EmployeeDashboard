@@ -1,4 +1,3 @@
-import '../App.css';
 import { useEffect, useState } from 'react';
 import fetchData from '../Utils/CsvParser';
 import csvData from '../data/ds_salaries.csv';
@@ -18,7 +17,6 @@ function HomePage() {
     
   },[]);
 
- console.log("Data is - ", data);
   return (
     <div className="App">
       <header className="App-header text-black">

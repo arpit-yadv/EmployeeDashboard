@@ -3,7 +3,7 @@ import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import fetchData from '../Utils/CsvParser';
 import countryCsvData from './../data/countryToCoordinateMap.csv'
-import TotalDataByField from '../Utils/TotalDataParser';
+import TotalDataByField from '../Utils/TotalDataByFieldCalc';
 import SearchForm from './SearchForm';
 import { Constants } from '../Utils/Constants';
 

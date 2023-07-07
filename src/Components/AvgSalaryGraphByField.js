@@ -10,8 +10,7 @@ import BarGraph from './BarGraph';
 const AvgSalaryGraphByField = ({data, sortByField, sortText}) => {
     const [graphData, setGraphData] = useState("");
     const [finalData, setFinalData] = useState(data);
-    const [graphType, setGraphType] = useState("Line");
-    
+    const [graphType, setGraphType] = useState("Line");    
 
     function dataToChartData({avg_data}){
       const chartData = {
@@ -62,15 +61,14 @@ const AvgSalaryGraphByField = ({data, sortByField, sortText}) => {
     };
 
   return (
-    <div className = "m-4 border border-dark border-secondary rounded " >
+    <div className = "m-auto mb-4 border border-dark border-secondary rounded col-lg-9" >
       
-      <h2>Average Salary over {sortText}</h2>
-      <button className="btn btn-primary m-1" onClick={taggleGraphType}>Change Graph Type</button>
+      <h2 data-testid = "average-graph-heading">Average Salary over {sortText}</h2>
+      <button data-testid = "change-graph-button" className="btn btn-primary m-1" onClick={taggleGraphType}>Change Graph Type</button>
       {graphData && getGraph()}
       {graphData  &&
       <SearchForm onSearch={handleFilter} fieldOptions = {Constants.AVERAGE_SALARY_GRAPHS}/>
       }
-
 
     </div>
   )

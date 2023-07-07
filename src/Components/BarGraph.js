@@ -53,12 +53,12 @@ const BarGraph = ({chartData}) => {
   };
 
   return (
-    <div>
+    <div data-testid = "bar-chart">
       <h3>Bar Graph</h3>
-      <Bar ref={chartRef} data={chartData} options={chartOptions} />
-      <button className="btn btn-secondary m-1" onClick={handleResetZoom}>Reset Zoom</button>
-      <button className="btn btn-secondary m-1" onClick={handleZoomIn}>Zoom In</button>
-      <button className="btn btn-secondary m-1" onClick={handleZoomOut}>Zoom Out</button>
+      <Bar data-testid = "bar-chart" ref={chartRef} data={chartData} options={chartOptions} />
+      <button data-testid="reset-zoom" className="btn btn-secondary m-1" onClick={handleResetZoom}>Reset Zoom</button>
+      <button data-testid = "zoom-in" className="btn btn-secondary m-1" onClick={handleZoomIn}>Zoom In</button>
+      <button test-testid = "zoom-out" className="btn btn-secondary m-1" onClick={handleZoomOut}>Zoom Out</button>
       
     </div>
   );
