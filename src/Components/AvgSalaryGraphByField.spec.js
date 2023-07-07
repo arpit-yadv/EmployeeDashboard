@@ -13,7 +13,6 @@ jest.doMock('./SearchForm', () => {
   const SearchForm = () => <div />;
   return SearchForm;
 });
-// jest.mock('../Utils/AvgDataParser');
 
 const data1 = { fields: [ 'Engineering', 'Sales' ], elements: [ 55000, 42500 ] };
 
@@ -24,7 +23,6 @@ describe('AvgSalaryGraphByField', () => {
     jest.spyOn(React, "useState").mockImplementationOnce(cb => cb()());
     AverageSalaryByField = jest.fn().mockResolvedValue(data1);
     
-     // .... other things ....
   });
   it('renders the component with initial data', async () => {
     const data = [
