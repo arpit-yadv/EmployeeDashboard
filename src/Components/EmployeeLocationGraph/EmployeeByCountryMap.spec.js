@@ -3,7 +3,7 @@ import { render, screen, waitFor } from '@testing-library/react';
 import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import MapComponent from './EmployeeByCountryMap';
 import fetchData from '../../Utils/CsvParser';
-import countryCsvData from './../data/countryToCoordinateMap.csv';
+import countryCsvData from '../../data/countryToCoordinateMap.csv';
 import TotalDataByField from '../../Utils/TotalDataByField';
 
 jest.mock('react-leaflet', () => ({
@@ -13,12 +13,12 @@ jest.mock('react-leaflet', () => ({
   Tooltip: ({ children }) => <div>{children}</div>,
 }));
 
-jest.mock('../Utils/CsvParser', () => ({
+jest.mock('../../Utils/CsvParser', () => ({
   __esModule: true,
   default: jest.fn(),
 }));
 
-jest.mock('../Utils/TotalDataByField', () => ({
+jest.mock('../../Utils/TotalDataByField', () => ({
   __esModule: true,
   default: jest.fn(),
 }));

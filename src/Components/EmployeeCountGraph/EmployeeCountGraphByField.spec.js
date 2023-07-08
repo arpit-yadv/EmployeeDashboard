@@ -7,7 +7,7 @@ jest.mock('react-chartjs-2', () => ({
   Line: () => null,
   Bar: () => null,
 }));
-jest.doMock('./SearchForm', () => {
+jest.doMock('../SearchComponents/SearchForm', () => {
   const SearchForm = () => <div />;
   return SearchForm;
 });
