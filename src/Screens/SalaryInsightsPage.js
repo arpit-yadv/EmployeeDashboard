@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import fetchData from '../Utils/CsvParser';
 import csvData from '../data/ds_salaries.csv';
-import AverageSalaryGraphs from '../Components/AverageSalaryGraphs';
+import AverageSalaryGraphs from '../Components/AvgSalaryGraphs/AverageSalaryGraphs';
 
 
 function HomePage() {

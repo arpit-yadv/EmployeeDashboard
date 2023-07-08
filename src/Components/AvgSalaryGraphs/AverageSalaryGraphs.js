@@ -1,5 +1,5 @@
 import React from 'react'
-import { Constants } from '../Utils/Constants';
+import { Constants } from '../../Utils/Constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AvgSalaryGraphByField from './AvgSalaryGraphByField';
 

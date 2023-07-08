@@ -1,5 +1,5 @@
 import React from 'react'
-import { Constants } from '../Utils/Constants';
+import { Constants } from '../../Utils/Constants';
 import EmployeeByCountryMap from './EmployeeByCountryMap';
 
 export default function EmployeeLocationGraphs({data}) {

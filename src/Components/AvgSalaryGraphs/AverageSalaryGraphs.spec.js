@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import AverageSalaryGraphs from './AverageSalaryGraphs';
-import { Constants } from '../Utils/Constants';
+import { Constants } from '../../Utils/Constants';
 import { act } from 'react-dom/test-utils';
 
 // Mocked data

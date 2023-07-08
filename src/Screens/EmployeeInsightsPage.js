@@ -1,7 +1,7 @@
 import React from 'react'
 import { Constants } from '../Utils/Constants';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import EmployeeCountGraphByField from '../Components/EmployeeCountGraphByField';
+import EmployeeCountGraphByField from '../Components/EmployeeCountGraph/EmployeeCountGraphByField';
 
 
 export default function EmployeeInsightsPage({data}) {

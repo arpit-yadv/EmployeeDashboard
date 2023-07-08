@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent, getByTestId, waitFor, getByText } from '@testing-library/react';
 import AvgSalaryGraphByField from './AvgSalaryGraphByField';
-import { Constants } from '../Utils/Constants';
+import { Constants } from '../../Utils/Constants';
 import { act } from 'react-dom/test-utils';
 
 

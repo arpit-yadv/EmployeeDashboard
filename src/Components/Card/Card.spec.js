@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import Card from './Card';
-import { mockData } from '../Utils/TestConstants';
+import { mockData } from '../../Utils/TestConstants';
 
 describe('Testing Card Component', () => {
   test('renders the component with the correct text', () => {

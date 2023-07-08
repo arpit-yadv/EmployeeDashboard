@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import SearchForm from '../Components/SearchForm';
-import SearchResults from '../Components/SearchResults';
+import SearchForm from '../Components/SearchComponents/SearchForm';
+import SearchResults from '../Components/SearchComponents/SearchResults';
 import './SearchPage.css'; 
 import { Constants } from '../Utils/Constants';
 import getQueryResultFromGPT from '../Utils/SearchConditionGenerator';
-import SearchWithAIForm from '../Components/SearchWithAIForm';
+import SearchWithAIForm from '../Components/SearchComponents/SearchWithAIForm';
 
 
 const SearchPage = ({ data, isAI }) => {

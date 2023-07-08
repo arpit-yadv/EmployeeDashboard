@@ -94,6 +94,6 @@ describe('EmployeeCountGraphByField', () => {
 
     // Simulate graph type change
     fireEvent.click(screen.getByText('Change Graph Type'));
-    
+
   });
 });

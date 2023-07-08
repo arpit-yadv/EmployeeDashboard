@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import fetchData from '../Utils/CsvParser';
-import countryCsvData from './../data/countryToCoordinateMap.csv'
-import TotalDataByField from '../Utils/TotalDataByField';
-import SearchForm from './SearchForm';
-import { Constants } from '../Utils/Constants';
+import fetchData from '../../Utils/CsvParser';
+import countryCsvData from '../../data/countryToCoordinateMap.csv'
+import TotalDataByField from '../../Utils/TotalDataByField';
+import SearchForm from '../SearchComponents/SearchForm';
+import { Constants } from '../../Utils/Constants';
 
 function MapComponent({data1, sortByField, sortText}) {
 

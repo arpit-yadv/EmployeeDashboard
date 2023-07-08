@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchPage from './Screens/SearchPage';
 import './App.css'
 import DashboardScreen from './Screens/DashboardScreen';
-import EmployeeLocationGraphs from './Components/EmployeeLocationGraphs';
+import EmployeeLocationGraphs from './Components/EmployeeLocationGraph/EmployeeLocationGraphs';
 import EmployeeInsightsPage from './Screens/EmployeeInsightsPage';
 
 function App() {

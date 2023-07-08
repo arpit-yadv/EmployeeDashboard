@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import SearchForm from './SearchForm';
-import AverageSalaryByField from '../Utils/AvgDataParser';
-import LineChart from './LineChart';
-import { Constants } from '../Utils/Constants';
-import BarGraph from './BarGraph';
-import TotalDataByField from '../Utils/TotalDataByField';
+import SearchForm from '../SearchComponents/SearchForm';
+import AverageSalaryByField from '../../Utils/AvgDataParser';
+import LineChart from '../LineChart/LineChart';
+import { Constants } from '../../Utils/Constants';
+import BarGraph from '../BarGraph/BarGraph';
+import TotalDataByField from '../../Utils/TotalDataByField';
 
 
 

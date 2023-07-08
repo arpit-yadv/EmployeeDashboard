@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../Components/Card'
+import Card from '../Components/Card/Card'
 import { Constants } from '../Utils/Constants'
 import 'bootstrap/dist/css/bootstrap.min.css';
 

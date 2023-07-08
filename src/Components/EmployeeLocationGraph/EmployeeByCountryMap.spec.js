@@ -2,9 +2,9 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import MapComponent from './EmployeeByCountryMap';
-import fetchData from '../Utils/CsvParser';
+import fetchData from '../../Utils/CsvParser';
 import countryCsvData from './../data/countryToCoordinateMap.csv';
-import TotalDataByField from '../Utils/TotalDataByField';
+import TotalDataByField from '../../Utils/TotalDataByField';
 
 jest.mock('react-leaflet', () => ({
   MapContainer: ({ children }) => <div>{children}</div>,
