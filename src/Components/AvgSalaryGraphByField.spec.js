@@ -9,10 +9,6 @@ jest.mock('react-chartjs-2', () => ({
   Line: () => null,
   Bar: () => null,
 }));
-jest.doMock('./SearchForm', () => {
-  const SearchForm = () => <div />;
-  return SearchForm;
-});
 
 const data1 = { fields: [ 'Engineering', 'Sales' ], elements: [ 55000, 42500 ] };
 
@@ -41,7 +37,7 @@ describe('AvgSalaryGraphByField', () => {
 
   // Mock useState before rendering your component
   const AverageSalaryByField = jest.fn();
-  const SearchForm = jest.fn();
+  // const SearchForm = jest.fn();
   jest
       .spyOn(React, 'useState')
       .mockImplementationOnce(() => realUseState(stubInitialState));

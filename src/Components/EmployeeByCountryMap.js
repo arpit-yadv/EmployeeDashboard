@@ -3,7 +3,7 @@ import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import fetchData from '../Utils/CsvParser';
 import countryCsvData from './../data/countryToCoordinateMap.csv'
-import TotalDataByField from '../Utils/TotalDataByFieldCalc';
+import TotalDataByField from '../Utils/TotalDataByField';
 import SearchForm from './SearchForm';
 import { Constants } from '../Utils/Constants';
 
@@ -51,12 +51,10 @@ function MapComponent({data1, sortByField, sortText}) {
         fetchMapData();
     },[filteredData])
 
-    const handleFilter = async (field, value) => {
+    const handleFilter = async ({field, value}) => {
       const filteredResults = data1.filter(item =>{
           return item[field]? item[field].toLowerCase().includes(value.toLowerCase()): false;
-      }
-        
-      );
+      });
       setFilteredData(filteredResults);
 
     };

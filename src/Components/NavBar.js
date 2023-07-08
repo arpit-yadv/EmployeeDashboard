@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white "  href="/EmployeeDashboard/#/locationinsights">
+            <a data-testid = "location-insights" className="nav-link text-white "  href="/EmployeeDashboard/#/locationinsights">
               <span className="font-weight-bold" >Employee on Maps</span>
             </a>
           </li>

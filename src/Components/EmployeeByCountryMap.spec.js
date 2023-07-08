@@ -4,7 +4,7 @@ import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 import MapComponent from './EmployeeByCountryMap';
 import fetchData from '../Utils/CsvParser';
 import countryCsvData from './../data/countryToCoordinateMap.csv';
-import TotalDataByField from '../Utils/TotalDataByFieldCalc';
+import TotalDataByField from '../Utils/TotalDataByField';
 
 jest.mock('react-leaflet', () => ({
   MapContainer: ({ children }) => <div>{children}</div>,
@@ -18,7 +18,7 @@ jest.mock('../Utils/CsvParser', () => ({
   default: jest.fn(),
 }));
 
-jest.mock('../Utils/TotalDataByFieldCalc', () => ({
+jest.mock('../Utils/TotalDataByField', () => ({
   __esModule: true,
   default: jest.fn(),
 }));
@@ -34,8 +34,6 @@ describe('MapComponent', () => {
     const sortByField = 'field';
     const sortText = 'Field';
 
-    const csvDataMock = jest.fn();
-    const totalDataByFieldMock = jest.fn();
     const mapDataBuilderMock = jest.fn();
 
     fetchData.mockResolvedValue([]);

@@ -1,4 +1,4 @@
-import TotalDataByField from './TotalDataByFieldCalc';
+import TotalDataByField from './TotalDataByField';
 
 describe('TotalDataByField', () => {
   test('calculates total count by field correctly', () => {

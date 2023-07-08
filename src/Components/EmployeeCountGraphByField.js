@@ -4,7 +4,7 @@ import AverageSalaryByField from '../Utils/AvgDataParser';
 import LineChart from './LineChart';
 import { Constants } from '../Utils/Constants';
 import BarGraph from './BarGraph';
-import TotalDataByField from '../Utils/TotalDataByFieldCalc';
+import TotalDataByField from '../Utils/TotalDataByField';
 
 
 
@@ -42,12 +42,10 @@ const EmployeeCountGraphByField = ({data, sortByField, sortText}) => {
         fetchData();
 
     },[finalData]);
-    const handleFilter = async (field, value) => {
+    const handleFilter = async ({field, value}) => {
       const filteredResults = data.filter(item =>{
           return item[field]? item[field].toLowerCase().includes(value.toLowerCase()): false;
-      }
-        
-      );
+      });
       setFinalData(filteredResults);
 
     };

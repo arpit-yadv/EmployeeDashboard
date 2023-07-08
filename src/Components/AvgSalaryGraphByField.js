@@ -40,7 +40,7 @@ const AvgSalaryGraphByField = ({data, sortByField, sortText}) => {
         fetchData();
 
     },[finalData]);
-    const handleFilter = async (field, value) => {
+    const handleFilter = async ({field, value}) => {
       const filteredResults = data.filter(item =>{
           return item[field]? item[field].toLowerCase().includes(value.toLowerCase()): false;
       }
